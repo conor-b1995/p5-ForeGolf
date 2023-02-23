@@ -1,0 +1,64 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/hero-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+}
+
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: uppercase;
+}
+
+.main-logo-link {
+    width: fit-content;
+}
+
+.shop-now-button {
+    background: #212E2F;
+    color: #E4D9EA;
+    min-width: 260px;
+}
+
+.btn-green {
+    background: #212E2F;
+    color: #E4D9EA;
+}
+
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background: #E4D9EA;
+    color: #212E2F;
+}
+
+.text-black {
+    color: #000 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+#delivery-banner {
+    background-color: #3B5537;
+    color: #F3F0EB;
+}
+
+.rounded-search {
+    border-radius: 10px !important;
+}
+
