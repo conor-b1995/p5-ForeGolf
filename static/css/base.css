@@ -49,6 +49,10 @@ body {
     color: #000 !important;
 }
 
+.text-light {
+    color: #F3F0EB;
+}
+
 .border-black {
     border: 1px solid black !important;
 }
@@ -64,6 +68,16 @@ body {
 
 #home-text {
     font-size: 3.5rem;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: white;
+    z-index: -1;
 }
 
 /*--------------------------------- media queries */
