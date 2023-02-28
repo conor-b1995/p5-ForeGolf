@@ -53,7 +53,7 @@ body {
     border: 1px solid black !important;
 }
 
-#delivery-banner {
+.bg-green {
     background-color: #3B5537;
     color: #F3F0EB;
 }
