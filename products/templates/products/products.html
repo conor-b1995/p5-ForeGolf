@@ -41,7 +41,7 @@
                     {% endif %}
                     <!-- Product name -->
                     <div class="card-body bg-green">
-                        <p class="card-title h6 text-center">{{ product.name }}</p>
+                        <p class="card-title h6 text-center text-light">{{ product.name }}</p>
                         <!-- Product category name -->
                         {% if product.category %}
                             <p class="small mt-2 mb-0 text-center">
@@ -51,7 +51,7 @@
                                 </a>
                             </p>
                         {% endif %}
-                        <div class="mt-2 mb-1 text-center">
+                        <div class="mt-2 mb-1 text-center text-light">
                             <p class="h4 mb-0 pb-1"><span class="">€{{ product.price }}</span></p>
                         </div>
                         <!-- DEFENSIVE PROGRAMMING: to warn users againt unintentional deletion of a product -->
