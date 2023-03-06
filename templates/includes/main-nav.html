@@ -12,12 +12,13 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="drivers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=drivers" id="drivers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Drivers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Mens</a>
-                <a href="" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?gender=mens" class="dropdown-item">Mens</a>
+                <a href="{% url 'products' %}?gender=womens" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?category=drivers" class="dropdown-item">All Drivers</a>
             </div>
         </li>
 
