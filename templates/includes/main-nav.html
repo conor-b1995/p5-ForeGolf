@@ -7,6 +7,8 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="" class="dropdown-item">By Price</a>
                 <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?gender=mens" class="dropdown-item">All Mens</a>
+                <a href="{% url 'products' %}?gender=womens" class="dropdown-item">All Womens</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -16,19 +18,20 @@
                 Drivers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="{% url 'products' %}?gender=mens" class="dropdown-item">Mens</a>
-                <a href="{% url 'products' %}?gender=womens" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?category=drivers&gender=mens" class="dropdown-item">Mens</a>
+                <a href="{% url 'products' %}?category=drivers&gender=womens" class="dropdown-item">Womans</a>
                 <a href="{% url 'products' %}?category=drivers" class="dropdown-item">All Drivers</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="irons-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=irons" id="irons-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Irons
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Mens</a>
-                <a href="" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?category=irons&gender=mens" class="dropdown-item">Mens</a>
+                <a href="{% url 'products' %}?category=irons&gender=womens" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?category=irons" class="dropdown-item">All Irons</a>
             </div>
         </li>
 
