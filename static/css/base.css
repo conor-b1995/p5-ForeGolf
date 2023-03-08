@@ -6,6 +6,8 @@ body {
     background: url('/media/hero-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 1.15rem;
 }
 
 /* --------------------------------- Colors */
@@ -76,6 +78,15 @@ body {
 }
 
 /* --------------------------------- Font */
+
+.product-text {
+    font-size: 1.5rem;
+}
+
+.page-title {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5rem;
+}
 
 .logo-font {
     text-transform: uppercase;
