@@ -47,10 +47,28 @@
                         {% if product.category %}
                             <p class="small mt-2 mb-0 text-center">
                                 <a class="text-light font-weight-bold"
-                                    href="">
+                                    href="{% url 'products' %}?category={{ product.category.name }}">
                                     <i class="fas fa-list"></i> {{ product.category.friendly_name }}
                                 </a>
                             </p>
+                        {% endif %}
+
+                        {% if product.gender %}
+                            {% if product.gender.name == 'mens' %}
+                                <p class="small mt-2 mb-0 text-center">
+                                    <a class="font-weight-bold text-light"
+                                        href="{% url 'products' %}?gender={{ product.gender.name }}">
+                                        <i class="fa-sharp fa-solid fa-person mr-1"></i>{{ product.gender.friendly_name }}
+                                    </a>
+                                </p>
+                                {% else %}
+                                <p class="small mt-2 mb-0 text-center">
+                                    <a class="font-weight-bold text-light"
+                                        href="{% url 'products' %}?gender={{ product.gender.name }}">
+                                        <i class="fa-sharp fa-solid fa-person-dress mr-1"></i>{{ product.gender.friendly_name }}
+                                    </a>
+                                </p>
+                            {% endif %}
                         {% endif %}
                         <div class="mt-2 mb-1 text-center text-light">
                             <p class="h4 mb-0 pb-1"><span class="">€{{ product.price }}</span></p>

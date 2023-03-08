@@ -91,15 +91,32 @@
             <div class="col-10 offset-1 offset-md-0 col-md-5 col-lg-4 mb-5 mt-5 bg-green">
                 <div class="mb-5 mt-md-4">
                     <p class="mb-0 h4 font-weight-bold mb-1 mt-3 text-light logo-font product-text">{{ product.name }}</p>
-                    <!-- Category for the product  -->
+                    <!-- Category and gender for the product  -->
                     <hr class="bg-white">
                     {% if product.category %}
-                    <p class="small mt-1 mb-0">
-                        <a class="font-weight-bold text-light"
-                            href="{% url 'products' %}?category={{ product.category.name }}">
-                            <i class="fas fa-list mr-1"></i>{{ product.category.friendly_name }}
-                        </a>
-                    </p>
+                        <p class="small mt-1 mb-0">
+                            <a class="font-weight-bold text-light"
+                                href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-list mr-1"></i>{{ product.category.friendly_name }}
+                            </a>
+                        </p>
+                    {% endif %}
+                    {% if product.gender %}
+                        {% if product.gender.name == 'mens' %}
+                        <p class="small mt-1 mb-0">
+                            <a class="font-weight-bold text-light"
+                                href="{% url 'products' %}?gender={{ product.gender.name }}">
+                                <i class="fa-sharp fa-solid fa-person mr-1"></i>{{ product.gender.friendly_name }}
+                            </a>
+                        </p>
+                        {% else %}
+                        <p class="small mt-1 mb-0">
+                            <a class="font-weight-bold text-light"
+                                href="{% url 'products' %}?gender={{ product.gender.name }}">
+                                <i class="fa-sharp fa-solid fa-person-dress mr-1"></i>{{ product.gender.friendly_name }}
+                            </a>
+                        </p>
+                        {% endif %}
                     {% endif %}
                     <!-- Displays the price of product -->
                     <div class="mb-3 mt-5">
