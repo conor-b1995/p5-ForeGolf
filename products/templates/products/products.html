@@ -17,12 +17,53 @@
 
         <div class="row">
             <div class="col text-center mt-1">
-                <h2 class="display-5 text-uppercase text-black text-center my-5">All Products</h2>
+                <h2 class="display-5 text-uppercase text-black text-center my-4">Products</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-10 offset-1">
+                <div class="row">
+                    <!-- Displays number of products available from user actions: searched term on search bar, product sorting or navbar click event -->
+                    <div class="col-12 col-md-6 order-md-first">
+                        <p class="alt-a mt-3 text-center font-weight-bold text-md-left">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span>
+                                    <a href="{% url 'products' %}" class="alt-a font-weight-bold">View All Products </a> |
+                                </span>
+                            {% endif %}
+                            {{ products|length }} Products{% if search_term %} found for
+                            <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                        <div class="w-50">
+                            <select id="sort-selector"
+                                class="custom-select custom-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...
+                                </option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price
+                                    (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price
+                                    (high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name
+                                    (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name
+                                    (Z-A)</option>
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>
+                                    Category (A-Z)</option>
+                                <option value="category_desc"
+                                    {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
         <!-- All products loop -->
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-4 mx-3 mb-5">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 mx-3 mb-5">
             {% for product in products %}
             <!-- Individual product cards -->
             <div class="col mb-4">
