@@ -178,4 +178,52 @@
         </div>
     </div>
 
+    <a id="button"></a>
+
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+
+    <script type="text/javascript">
+        var btn = $('#button');
+
+        $(window).scroll(function() {
+        if ($(window).scrollTop() > 300) {
+            btn.addClass('show');
+        } else {
+            btn.removeClass('show');
+        }
+        });
+
+        btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '300');
+        });
+    </script>
+
+    <script type="text/javascript">
+
+        $('#sort-selector').change(function() {
+            var selector = $(this);
+            var currentUrl = new URL(window.location);
+
+            var selectedVal = selector.val();
+            if(selectedVal != "reset"){
+                var sort = selectedVal.split("_")[0];
+                var direction = selectedVal.split("_")[1];
+
+                currentUrl.searchParams.set("sort", sort);
+                currentUrl.searchParams.set("direction", direction);
+
+                window.location.replace(currentUrl);
+            } else {
+                currentUrl.searchParams.delete("sort");
+                currentUrl.searchParams.delete("direction");
+
+                window.location.replace(currentUrl);
+            }
+        })
+
+    </script>
 {% endblock %}
