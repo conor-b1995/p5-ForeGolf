@@ -10,12 +10,57 @@ body {
     font-size: 1.15rem;
 }
 
-/* --------------------------------- Colors */
+/* --------------------------------- buttons */
 
 .shop-now-button {
     background: #212E2F;
     color: #E4D9EA;
     min-width: 260px;
+}
+
+.add-to-bag-btn {
+    border-radius: 26px;
+    background-color: #fff;
+    border: none;
+    color: #000;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+  
+.add-to-bag-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.add-to-bag-btn span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.add-to-bag-btn:hover span {
+    padding-right: 25px;
+}
+
+.add-to-bag-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.shopping-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.shopping-btn:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 .btn-green {
@@ -32,6 +77,8 @@ body {
     background: #E4D9EA;
     color: #212E2F;
 }
+
+/* --------------------------------- Colors */
 
 .text-black {
     color: #000 !important;
