@@ -12,12 +12,6 @@ body {
 
 /* --------------------------------- buttons */
 
-.shop-now-button {
-    background: #212E2F;
-    color: #E4D9EA;
-    min-width: 260px;
-}
-
 .add-to-bag-btn {
     border-radius: 26px;
     background-color: #fff;
@@ -27,7 +21,7 @@ body {
     transition: all 0.5s;
     cursor: pointer;
 }
-  
+
 .add-to-bag-btn span {
     cursor: pointer;
     display: inline-block;
@@ -65,17 +59,41 @@ body {
 
 .btn-green {
     background: #212E2F;
+    color: #fff;
+}
+
+.btn-green:hover,
+.btn-green:active,
+.btn-green:focus {
+    background-color: #fff;
+    color: #212E2F;
+}
+
+.shop-now-button {
+    background: #212E2F;
     color: #E4D9EA;
+    min-width: 260px;
 }
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
-.btn-green:hover,
-.btn-green:active,
-.btn-green:focus {
+.shop-now-button:focus {
     background: #E4D9EA;
     color: #212E2F;
+}
+
+.checkout-btn {
+    background-color: #3B5537;
+    color: #fff;
+}
+
+.checkout-btn:hover {
+    background-color: rgba(59, 85, 55, 0.4);
+    color: #000;
+}
+
+.btn-lg:hover {
+    text-decoration: none;
 }
 
 /* --------------------------------- Colors */
@@ -84,7 +102,12 @@ body {
     color: #000 !important;
 }
 
-.text-light {
+.text-cream {
+    color: #F3F0EB;
+}
+
+.text-cream:hover {
+    text-decoration-style: solid;
     color: #F3F0EB;
 }
 
@@ -122,6 +145,10 @@ body {
     position: fixed;
     background: white;
     z-index: -1;
+}
+
+table td {
+    vertical-align: middle !important;
 }
 
 /* --------------------------------- Font */

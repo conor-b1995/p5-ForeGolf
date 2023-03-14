@@ -82,12 +82,12 @@
                     {% endif %}
                     <!-- Product name -->
                     <div class="card-body bg-green">
-                        <p class="card-title h6 text-center text-light logo-font product-text">{{ product.name }}</p>
+                        <p class="card-title h6 text-center text-cream logo-font product-text">{{ product.name }}</p>
                         <!-- Product category name -->
                         <hr class="bg-white">
                         {% if product.category %}
                             <p class="small mt-2 mb-0 text-center">
-                                <a class="text-light font-weight-bold"
+                                <a class="text-cream font-weight-bold"
                                     href="{% url 'products' %}?category={{ product.category.name }}">
                                     <i class="fas fa-list"></i> {{ product.category.friendly_name }}
                                 </a>
@@ -97,32 +97,32 @@
                         {% if product.gender %}
                             {% if product.gender.name == 'mens' %}
                                 <p class="small mt-2 mb-0 text-center">
-                                    <a class="font-weight-bold text-light"
+                                    <a class="font-weight-bold text-cream"
                                         href="{% url 'products' %}?gender={{ product.gender.name }}">
                                         <i class="fa-sharp fa-solid fa-person mr-1"></i>{{ product.gender.friendly_name }}
                                     </a>
                                 </p>
                                 {% else %}
                                 <p class="small mt-2 mb-0 text-center">
-                                    <a class="font-weight-bold text-light"
+                                    <a class="font-weight-bold text-cream"
                                         href="{% url 'products' %}?gender={{ product.gender.name }}">
                                         <i class="fa-sharp fa-solid fa-person-dress mr-1"></i>{{ product.gender.friendly_name }}
                                     </a>
                                 </p>
                             {% endif %}
                         {% endif %}
-                        <div class="mt-2 mb-1 text-center text-light">
+                        <div class="mt-2 mb-1 text-center text-cream">
                             <p class="h4 mb-0 pb-1"><span class="">€{{ product.price }}</span></p>
                         </div>
                         <!-- DEFENSIVE PROGRAMMING: to warn users againt unintentional deletion of a product -->
                         {% if request.user.is_superuser %}
                         <div class="text-center">
                             <div class="container d-flex justify-content-center mt-2">
-                                <a class="btn btn-sm border-black bg-dark text-light mt-1 font-weight-bold rounded-0 mb-3 mx-2"
+                                <a class="btn btn-sm border-black bg-dark text-cream mt-1 font-weight-bold rounded-0 mb-3 mx-2"
                                     href="">
                                     Edit Product
                                 </a>
-                                <button class="btn btn-sm text-light border-black bg-dark font-weight-bold mt-1 rounded-0 mb-3 mx-2"
+                                <button class="btn btn-sm text-cream border-black bg-dark font-weight-bold mt-1 rounded-0 mb-3 mx-2"
                                     data-toggle="modal" data-target="#modal-{{ product.id }}">Delete Product
                                 </button>
                                 <!-- Start of Modal - available to superusers only -->
