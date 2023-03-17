@@ -141,6 +141,25 @@
                         </div>
                     </div>
                     <!-- END OF ACCORDION -->
+                    {% if product.category.name == 'drivers' %}
+                    <div class="mt-3">
+                        <p class="text-cream"><strong>Degrees:</strong></p>
+                        <select class="form-control rounded-0 w-50" name="club_degrees" id='id_driver_degrees'>
+                            <option value="9deg">9.0&deg;</option>
+                            <option value="10deg" selected>10.5&deg;</option>
+                        </select>
+                    </div>
+                    {% endif %}
+
+                    {% if product.category.name == 'wedges' %}
+                    <div class="mt-3">
+                        <p class="text-cream"><strong>Degrees:</strong></p>
+                        <select class="form-control rounded-0 w-50" name="club_degrees" id='id_wedges_degrees'>
+                            <option value="56deg">56&deg;</option>
+                            <option value="60deg" selected>60&deg;</option>
+                        </select>
+                    </div>
+                    {% endif %}
 
                     <form class="form" action="{% url 'add_to_bag' product.id %}" method="POST">
                         {% csrf_token %}
