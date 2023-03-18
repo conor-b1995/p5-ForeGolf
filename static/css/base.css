@@ -96,6 +96,26 @@ body {
     text-decoration: none;
 }
 
+.increment-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.increment-btn:hover {
+    background-color: greenyellow;
+    color: #000;
+}
+
+.decrement-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.decrement-btn:hover {
+    background-color: red;
+    color: #000;
+}
+
 /* --------------------------------- Colors */
 
 .text-black {
