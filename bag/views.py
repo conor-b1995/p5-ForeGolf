@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, HttpResponse
 
 
 def view_bag(request):
@@ -52,12 +52,37 @@ def update_bag(request, item_id):
             bag[item_id]['clubs_by_degrees'][degrees] = quantity
         else:
             del bag[item_id]['clubs_by_degrees'][degrees]
+            if not bag[item_id]['clubs_by_degrees']:
+                bag.pop(item_id)
     else:
         if quantity > 0:
             bag[item_id] = quantity
         else:
-            bag.pop[item_id]
+            bag.pop(item_id)
 
     request.session['bag'] = bag
-
     return redirect(reverse('view_bag'))
+
+
+def remove_from_bag(request, item_id):
+    """ Allow users to delete products from there bag """
+
+    try:
+        degrees = None
+
+        if 'club_degrees' in request.POST:
+            degrees = request.POST['club_degrees']
+        bag = request.session.get('bag', {})
+
+        if degrees:
+            del bag[item_id]['clubs_by_degrees'][degrees]
+            if not bag[item_id]['clubs_by_degrees']:
+                bag.pop(item_id)
+        else:
+            bag.pop(item_id)
+
+        request.session['bag'] = bag
+        return HttpResponse(status=200)
+
+    except Exception as e:
+        return HttpResponse(status=500)
