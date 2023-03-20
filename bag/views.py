@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 
 
 def view_bag(request):
@@ -35,3 +35,29 @@ def add_to_bag(request, item_id):
     request.session['bag'] = bag
 
     return redirect(redirect_url)
+
+
+def update_bag(request, item_id):
+    """ Allow users update the quantity of a specific products to there bag """
+
+    quantity = int(request.POST.get('quantity'))
+    degrees = None
+
+    if 'club_degrees' in request.POST:
+        degrees = request.POST['club_degrees']
+    bag = request.session.get('bag', {})
+
+    if degrees:
+        if quantity > 0:
+            bag[item_id]['clubs_by_degrees'][degrees] = quantity
+        else:
+            del bag[item_id]['clubs_by_degrees'][degrees]
+    else:
+        if quantity > 0:
+            bag[item_id] = quantity
+        else:
+            bag.pop[item_id]
+
+    request.session['bag'] = bag
+
+    return redirect(reverse('view_bag'))
