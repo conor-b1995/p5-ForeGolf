@@ -175,6 +175,12 @@ table td {
     vertical-align: middle !important;
 }
 
+.bag-notification-wrapper {
+    height: 150px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* --------------------------------- Font */
 
 .product-text {
