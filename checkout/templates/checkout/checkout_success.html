@@ -67,7 +67,7 @@
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="small mb-0 text-black font-weight-bold">
-                                {{ item.product.name }}{% if item.club_degrees %} Degrees: {{ item.club_degrees }}{% endif %}
+                                {{ item.product.name }}{% if item.club_degrees %} Degrees:<span class="font-weight-normal">{{ item.club_degrees }}</span>{% endif %}
                             </p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
@@ -106,7 +106,7 @@
                             <p class="mb-0 text-black font-weight-bold">Address 2</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">{{ order.street_address1 }}</p>
+                            <p class="mb-0">{{ order.street_address2 }}</p>
                         </div>
                     </div>
                     {% endif %}
