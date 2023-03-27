@@ -60,6 +60,7 @@ body {
 .btn-green {
     background: #212E2F;
     color: #fff;
+    border: 1px solid transparent;
 }
 
 .btn-green:hover,
@@ -67,6 +68,8 @@ body {
 .btn-green:focus {
     background-color: #fff;
     color: #212E2F;
+    border: 1px solid black;
+    margin: -0.1px;
 }
 
 .shop-now-button {

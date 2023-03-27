@@ -118,7 +118,7 @@
                         <div class="text-center">
                             <div class="container d-flex justify-content-center mt-2">
                                 <a class="btn btn-sm border-black bg-dark text-cream mt-1 font-weight-bold rounded-0 mb-3 mx-2"
-                                    href="">
+                                    href="{% url 'edit_product' product.id %}">
                                     Edit Product
                                 </a>
                                 <button class="btn btn-sm text-cream border-black bg-dark font-weight-bold mt-1 rounded-0 mb-3 mx-2"
@@ -152,12 +152,12 @@
                                                         <div class="row justify-content-end no-gutters">
                                                             <!-- Cancel action button  -->
                                                             <button type="button"
-                                                                class="btn btn-sm btn-outline-black font-weight-bold mt-1 rounded-0 mb-3 mx-2"
+                                                                class="btn btn-sm btn-green font-weight-bold mt-1 rounded-0 mb-3 mx-2"
                                                                 data-dismiss="modal">Cancel
                                                             </button>
                                                             <!-- Delete link as button  -->
-                                                            <a href=""
-                                                                class="btn btn-sm btn-red mt-1 font-weight-bold rounded-0 mb-3 mx-2">Delete
+                                                            <a href="{% url 'delete_product' product.id %}"
+                                                                class="btn checkout-btn btn-sm mt-1 font-weight-bold rounded-0 mb-3 mx-2">Delete
                                                             </a>
                                                         </div>
                                                     </div>
