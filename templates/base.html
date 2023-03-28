@@ -23,6 +23,13 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Maven+Pro&display=swap" rel="stylesheet">
+
+		<!-- mailchimp css -->
+		<link href="//cdn-images.mailchimp.com/embedcode/classic-071822.css" rel="stylesheet" type="text/css">
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" sizes="32x32" href="/media/favicon.png">
+		<meta name="theme-color" content="#ffffff">
 	{% endblock %}
 
 	{% block extra_css %}
@@ -175,12 +182,12 @@
 		<div class="container">
 			<div class="row">
 				<!-- Useful Pages List -->
-				<div class="col-12 col-sm-8">
+				<div class="col-10 offset-1 col-md-6">
 					<a href="" class="footer-item text-cream">Contact Us</a>
 					<a href="" class="footer-item ml-5 text-cream">Privacy Policy</a>
 				</div>
 				<!-- Social Outlets -->
-				<div class="col-6 col-sm-4">
+				<div class="col-10 offset-1 col-md-6 mt-3">
 					<ul class="list-group list-group-horizontal">
 						<li class="list-group-item">
 							<a href="https://facebook.com" aria-label="Go to our Facebook page" target="_blank"
@@ -205,15 +212,62 @@
 					</ul>
 				</div>
 			</div>
-			<!-- Copyright Information -->
+			<!-- Begin Mailchimp Signup Form -->
 			<div class="row">
+				<div class="col-10 offset-1 text-black">
+					<div id="mc_embed_signup">
+						<form action="https://hotmail.us14.list-manage.com/subscribe/post?u=c3e0fabcc09ce326214171022&amp;id=07a5562329&amp;f_id=00ce67e0f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+							<div id="mc_embed_signup_scroll">
+							<h2 class="pt-3">Subscribe</h2>
+							<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address  <span class="asterisk">*</span>
+					</label>
+						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" required>
+						<span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+					</div>
+						<div id="mce-responses" class="clear foot">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+						<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_c3e0fabcc09ce326214171022_07a5562329" tabindex="-1" value=""></div>
+							<div class="optionalParent">
+								<div class="clear foot">
+									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+									<p class="brandingLogo"><a href="http://eepurl.com/ik2_R9" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"></a></p>
+								</div>
+							</div>
+						</div>
+					</form>
+					</div>
+				</div>
+			</div>
+			<!-- mailchimp scripts -->
+			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+			<script type='text/javascript'>(function($) {
+				window.fnames = new Array(); 
+				window.ftypes = new Array();
+				fnames[0]='EMAIL';ftypes[0]='email';
+				fnames[1]='FNAME';ftypes[1]='text';
+				fnames[2]='LNAME';ftypes[2]='text';
+				fnames[3]='ADDRESS';ftypes[3]='address';
+				fnames[4]='PHONE';ftypes[4]='phone';
+				fnames[5]='BIRTHDAY';ftypes[5]='birthday';
+				}(jQuery)
+				);
+				var $mcj = jQuery.noConflict(true);
+				</script>
+			<!--End mc_embed_signup-->
+			<!-- Copyright Information -->
+			<div class="row mt-5">
 				<div class="col-12">
-					<p class="">
-						Fore Golf © 2022.
+					<p class="text-center">
+						Fore Golf © 2023.
 						<br>All rights reserved
 					</p>
 				</div>
 			</div>
+
 		</div>
 	</footer>
 
