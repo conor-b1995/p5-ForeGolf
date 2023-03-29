@@ -1,0 +1,1 @@
+web: gunicorn fore_golf.wsgi:application
