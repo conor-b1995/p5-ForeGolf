@@ -1,0 +1,33 @@
+<form class="form update-form" method="POST" action="{% url 'update_bag' item.item_id %}">
+    {% csrf_token %}
+    <div class="form-group w-75">
+        <div class="input-group">
+            <!-- Decrement quantity button -->
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn decrement-btn rounded-0 decrement-qty_{{ item.item_id }}"
+                    data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}" aria-label="decrement item number">
+                    <span>
+                        <i class="fas fa-minus fa-sm"></i>
+                    </span>
+                </button>
+            </div>
+            <input class="form-control qty_input id_qty_{{ item.item_id }}" type="number" name="quantity"
+            value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+            <!-- Increment quantity button -->
+            <div class="input-group-append">
+                <button class="increment-qty btn increment-btn rounded-0 increment-qty_{{ item.item_id }}"
+                    data-item_id="{{ item.item_id }}" aria-label="increment item number">
+                    <span>
+                        <i class="fas fa-plus fa-sm"></i>
+                    </span>
+                </button>
+            </div>
+            {% if item.product.has_degrees %}
+                <input type="hidden" name="club_degrees" value="{{ item.degrees }}">
+            {% endif %} 
+        </div>
+    </div>
+</form>
+<a class="update-item text-info pointer"><small>Update</small></a>
+<a class="remove-item text-danger pointer" id="remove_{{ item.item_id }}"
+        data-club_degrees="{{ item.degrees }}"><small>Remove</small></a>
