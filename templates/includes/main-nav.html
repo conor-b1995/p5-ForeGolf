@@ -17,7 +17,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=drivers" id="drivers-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Drivers
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
+            <div class="dropdown-menu border-0" aria-labelledby="drivers-link">
                 <a href="{% url 'products' %}?category=drivers&gender=mens" class="dropdown-item">Mens</a>
                 <a href="{% url 'products' %}?category=drivers&gender=womens" class="dropdown-item">Womans</a>
                 <a href="{% url 'products' %}?category=drivers" class="dropdown-item">All Drivers</a>
@@ -28,7 +28,7 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="{% url 'products' %}?category=irons" id="irons-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Irons
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
+            <div class="dropdown-menu border-0" aria-labelledby="irons-link">
                 <a href="{% url 'products' %}?category=irons&gender=mens" class="dropdown-item">Mens</a>
                 <a href="{% url 'products' %}?category=irons&gender=womens" class="dropdown-item">Womans</a>
                 <a href="{% url 'products' %}?category=irons" class="dropdown-item">All Irons</a>
@@ -39,9 +39,10 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="wedges-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Wedges
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Mens</a>
-                <a href="" class="dropdown-item">Womans</a>
+            <div class="dropdown-menu border-0" aria-labelledby="wedges-link">
+                <a href="{% url 'products' %}?category=wedges&gender=mens" class="dropdown-item">Mens</a>
+                <a href="{% url 'products' %}?category=wedges&gender=womens" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?category=wedges" class="dropdown-item">All Wedges</a>
             </div>
         </li>
 
@@ -49,9 +50,10 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="putters-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Putters
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Mens</a>
-                <a href="" class="dropdown-item">Womans</a>
+            <div class="dropdown-menu border-0" aria-labelledby="putters-link">
+                <a href="{% url 'products' %}?category=putters&gender=mens" class="dropdown-item">Mens</a>
+                <a href="{% url 'products' %}?category=putters&gender=womens" class="dropdown-item">Womans</a>
+                <a href="{% url 'products' %}?category=putters" class="dropdown-item">All Putters</a>
             </div>
         </li>
 
@@ -59,11 +61,12 @@
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="accessories-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Accessories
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">Tees</a>
-                <a href="" class="dropdown-item">Gloves</a>
-                <a href="" class="dropdown-item">Towels</a>
-                <a href="" class="dropdown-item">Shoes</a>
+            <div class="dropdown-menu border-0" aria-labelledby="accessories-link">
+                <a href="{% url 'products' %}?q=tees" class="dropdown-item">Tees</a>
+                <a href="{% url 'products' %}?q=glove" class="dropdown-item">Gloves</a>
+                <a href="{% url 'products' %}?q=towel" class="dropdown-item">Towels</a>
+                <a href="{% url 'products' %}?q=shoe" class="dropdown-item">Shoes</a>
+                <a href="{% url 'products' %}?category=accessories" class="dropdown-item">All Accessories</a>
             </div>
         </li>
     </ul>
