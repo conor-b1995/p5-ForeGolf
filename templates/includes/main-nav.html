@@ -7,6 +7,20 @@
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=brand&direction=asc" class="dropdown-item">By Brand</a>
+                <div class="brands">
+                    <ul class="ml-3">
+                        <li><a href="{% url 'products' %}?brand=taylormade" class="">Taylormade</a></li>
+                        <li><a href="{% url 'products' %}?brand=ping" class="">Ping</a></li>
+                        <li><a href="{% url 'products' %}?brand=callaway" class="">Callaway</a></li>
+                        <li><a href="{% url 'products' %}?brand=cleveland" class="">Cleveland</a></li>
+                        <li><a href="{% url 'products' %}?brand=cobra" class="">Cobra</a></li>
+                        <li><a href="{% url 'products' %}?brand=nike" class="">Nike</a></li>
+                        <li><a href="{% url 'products' %}?brand=titleist" class="">Titleist</a></li>
+                        <li><a href="{% url 'products' %}?brand=scotty_cameron" class="">Scotty Cameron</a></li>
+                        <li><a href="{% url 'products' %}?brand=footjoy" class="">Footjoy</a></li>
+                    </ul>
+                </div>
                 <a href="{% url 'products' %}?gender=mens" class="dropdown-item">All Mens</a>
                 <a href="{% url 'products' %}?gender=womens" class="dropdown-item">All Womens</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>

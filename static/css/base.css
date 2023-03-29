@@ -338,6 +338,15 @@ table td {
     font:14px Helvetica,Arial,sans-serif; 
 }
 
+/* --------------------------------- Brand list items */
+
+.brands ul li {
+    list-style-type: circle;
+}
+
+.brands ul li a {
+    color: #000;
+}
 /*--------------------------------- media queries */
 
 @media (min-width: 1200px) {
