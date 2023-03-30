@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /bag/
+Sitemap: https://p5-fore-golf.herokuapp.com/sitemap.xml
