@@ -331,6 +331,8 @@ The technologies that I used for `Fore Golf's` website project are the following
 ---
 ## Testing
 
+Please refer to [TESTING.md](/TESTING.md)
+
 ---
 ## Deployment
 
