@@ -1,8 +1,8 @@
 # **Fore Golf**
 
-![Responsive Image]()
+![Responsive Image](/readme_images/responsive-image.png)
 
-**[Link to the Deployed Site]()**
+**[Link to the Deployed Site](https://p5-fore-golf.herokuapp.com/)**
 
 ---
 ## Project Overview
@@ -22,10 +22,10 @@ Since the wireframes are an idea of how I think the website would look like befo
 <details>
 <summary>Wireframes</summary>
 
-![home page]()
-![product page]()
-![product detail page]()
-![shopping bag page]()
+![home page](/readme_images/home-page-wireframe.png)
+![product page](/readme_images/products-page-wireframe.png)
+![product detail page](/readme_images/product-detail-wireframe.png)
+![shopping bag page](/readme_images/bag-wireframe.png)
 </details>
 
 ---
@@ -84,7 +84,7 @@ I downloaded the background hero image from Google. I have used the hero image o
 
 <br>
 
-![Screenshot of hero image]()
+![Screenshot of hero image](/readme_images/hero-image2.png)
 </details>
 
 <details>
@@ -93,7 +93,7 @@ I downloaded the background hero image from Google. I have used the hero image o
 My navigation bar for this website is relatively clean, with just the most necessary text/buttons/search bar/menus to give the website an overall clean look.
 <br>
 
-![Screenshot of navigation bar]()
+![Screenshot of navigation bar](/readme_images/nav-bar.png)
 </details>
 
 <details>
@@ -101,9 +101,8 @@ My navigation bar for this website is relatively clean, with just the most neces
 <br>
 The design of the buttons on this website of course varies depending on the background and the surrounding (if the button is next to another button etc). Most of the buttons are green with white text, but some buttons are white with black text. Almost all buttons/links change their color when you hover over them giving them an effect that makes the user aware of clicking. 
 
-![Screenshot of buttons]()
-![Screenshot of buttons]()
-![Screenshot of buttons]()
+![Screenshot of buttons](/readme_images/add-to-bag-btn.png)
+![Screenshot of buttons](/readme_images/checkout-btn.png)
 
 </details>
 
@@ -113,7 +112,7 @@ The design of the buttons on this website of course varies depending on the back
 The footer holds the Newsletter, Contact link, social media links and privacy policy link.
 <br>
 
-![Screenshot of footer]()
+![Screenshot of footer](/readme_images/footer.png)
 </details>
 
 <details>
@@ -122,9 +121,8 @@ The footer holds the Newsletter, Contact link, social media links and privacy po
 I choose to go for dropdown menus for "Products" and "My profile" as in the Code Institute - Boutique Ado Walkthrough Project.
 <br>
 
-![Screenshot of dropdown products]()
-![Screenshot of dropdown category]()
-![Screenshot of dropdown profile]()
+![Screenshot of dropdown products](/readme_images/dropdown-products.png)
+![Screenshot of dropdown profile](/readme_images/account-dropdown.png)
 </details>
 
 <details>
@@ -133,7 +131,7 @@ I choose to go for dropdown menus for "Products" and "My profile" as in the Code
 My profile page is the same layout as in Code Institute - Boutique Ado Walkthrough Project, but with the correct color theme for this website. This page holds all the saved delivery information of the user (if the user has made purchases before) where the user can update the information and the page also lists order history with all orders made with that user account.
 <br>
 
-![Screenshot of profile page]()
+![Screenshot of profile page](/readme_images/my-profile.png)
 </details>
 
 <details>
@@ -142,9 +140,8 @@ My profile page is the same layout as in Code Institute - Boutique Ado Walkthrou
 The register, login, and logout pages hold the relevant input boxes for users to either create an account, log in, or log out. The styling for these is almost the same with the correct color scheme of the website.
 <br>
 
-![Screenshot of register page]()
-![Screenshot of login page]()
-![Screenshot of logout page]()
+![Screenshot of register page](/readme_images/sign-up.png)
+![Screenshot of login page](/readme_images/sign-in.png)
 </details>
 
 <details>
@@ -153,7 +150,7 @@ The register, login, and logout pages hold the relevant input boxes for users to
 For each transaction made on the website, regardless of whether it is adding a product to the shopping bag or triggering an error the user/admin will get a message in the top right corner with the relevant information if the transaction was successful or not. The different toasts used are success, info, warning, and error with all of them wearing it's own color relating to the message. These toasts were taken as inspiration from the Code Institute - Boutique Ado Walkthrough Project.
 <br>
 
-![Screenshot of toast success]()
+![Screenshot of toast success](/readme_images/toast.png)
 </details>
 
 <details>
@@ -162,7 +159,7 @@ For each transaction made on the website, regardless of whether it is adding a p
 Every time when a user adds a product to the shopping bag or when a user removes a product from the bag the pop up appears. The user can use the button in this pop-up bag to get to the real shopping bag. This feature is taken as inspiration from the Code Institute - Boutique Ado Walkthrough Project but I have styled it to match the rest of this website.
 <br>
 
-![Screenshot of pop-up bag]()
+![Screenshot of pop-up bag](/readme_images/pop-up-bag.png)
 </details>
 
 <details>
@@ -171,7 +168,7 @@ Every time when a user adds a product to the shopping bag or when a user removes
 The shopping bag displays all the products that have been added to the bag, the quantity of each product, an update/remove quantity input, price, subtotal, bag total, grand total, and buttons for keep shopping more or secure checkout. This page is taken as inspiration from Code Institute - Boutique Ado Walkthrough Project but I have styled it to match the rest of this website.
 <br>
 
-![Screenshot of shopping bag]()
+![Screenshot of shopping bag](/readme_images/shopping-bag.png)
 </details>
 
 <details>
@@ -180,8 +177,7 @@ The shopping bag displays all the products that have been added to the bag, the 
 The checkout page displays a form for submitting the delivery and billing information (this form can be pre-filled if the user is logged in and has saved past purchase info), an order summary that shows the products the user has added, quantity, subtotal, order total, grand total and buttons for either adjusting the bag if the user wants to add more products or remove products. The other button is to confirm the purchase. This page is taken as inspiration from the Code Institute - Boutique Ado Walkthrough Project but I have styled it to match the rest of this website.
 <br>
 
-![Screenshot of checkout page]()
-![Screenshot of checkout page]()
+![Screenshot of checkout page](/readme_images/checkout.png)
 </details>
 
 <details>
@@ -190,7 +186,7 @@ The checkout page displays a form for submitting the delivery and billing inform
 When the user has clicked the button to complete the order a new page will show up with the order information. This page displays order info, order details, delivery to, billing info, and a button for shopping for more products. A success message will show up on this page after the purchase was completed with information about the order. This page is taken as inspiration from the Code Institute - Boutique Ado Walkthrough Project but I have styled it to match the rest of this website.
 <br>
 
-![Screenshot of checkout success page]()
+![Screenshot of checkout success page](/readme_images/checkout-success.png)
 </details>
 
 <details>
@@ -199,8 +195,8 @@ When the user has clicked the button to complete the order a new page will show 
 The pages for add/edit products/blog posts are almost the same in layout as CI - Boutique Ado, but they follow the color theme of this website. With a form for either adding or editing the related product.  
 <br>
 
-![Screenshot of add products]()
-![Screenshot of edit products]()
+![Screenshot of add products](/readme_images/add-product.png)
+![Screenshot of edit products](/readme_images/edit-product.png)
 
 </details>
 
@@ -210,31 +206,20 @@ The pages for add/edit products/blog posts are almost the same in layout as CI -
 Only the admin/Store owner can delete products. Important to remember here is that when deleting, the action can not be undone! The buttons for this look like the images below.
 <br>
 
-![Screenshot of delete products]()
+![Screenshot of delete products](/readme_images/delete-product.png)
 </details>
 
 ### Color Scheme
 This palette has been selected to bring contrasting colours to improve accessibility to visually impaired users. As the aim of the site is to promote and sell golf equipment, white text on a green background is the primary colors. Green has been chosen as conventionally this represents where the game of golf is played, on grass.
 
-![Screenshot of white to black colors]()
+![Screenshot of whigreente to white colors](/readme_images/color-pallette.png)
 
-![Screenshot of yellow to orange colors]()
-
-![Screenshot of red colors]()
-
-I created these color paletts at []().
+I created this color palette at [coolors.co](https://coolors.co/).
 
 ### Fonts
 
 I choose two different fonts for my website, `"Kanit"` for my website name header and `"Maven Pro"` for all other text including all headings. I choose these two fonts because I thought they matched well together for this website. The fonts were taken from [pairfonts.com]().
  
-**Kanit for my logo:**
- 
-![Screenshot of Kanit font for header]()
- 
-**Maven Pro for all other text:**
- 
-![Screenshot of font Maven Pro on text]()
 
 ---
 ## Features
@@ -281,10 +266,10 @@ The marketing aspect of Fore Golf has been done via creating a [FaceBook](https:
 The marketing strategy of Fore Golf is to send emails to our email subscribers.
 
 ### FaceBook page
-![Screenshot of mockup facebook page]()
+![Screenshot of mockup facebook page](/readme_images/Facebook-mockup.png)
 
 ### Mailchimp
-![Screenshot of mailchimps footer part]() 
+![Screenshot of mailchimps footer part](/readme_images/footer.png) 
 
 ### robots.txt
 `Robots.txt` is a text file webmasters create to instruct web robots (typically search engine robots) how to crawl pages on their websites. The robots.txt file is part of the robots exclusion protocol (REP), a group of web standards that regulate how robots crawl the web, access, and index content, and serve that content up to users.
@@ -366,7 +351,7 @@ For this project, I used the Code Institute Python template.
  
 **Steps to create a new repository in Github:**
  
-1. Sign in or sign up to [GitHub](https://github.com) (link).
+1. Sign in or sign up to [GitHub](https://github.com).
 2. When you have done that, you will see `"new"` up in the left corner.
 3. Select in the dropdown menu under `Repository template` if you for example would like to use the template provided by `Code Institute` that I did for this project. Click `Use this template` to the left of the green Gitpod button.
 4. When you have done that, give the repository a name. Leave it public if you want anyone on the internet to see your repository.
