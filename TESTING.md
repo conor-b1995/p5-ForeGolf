@@ -42,3 +42,87 @@
 | :-- | :-- | :-- | :-- | :-- | :-- |
 | **DIGITAL MARKETING** |   |   |  |  |
 | 27 | Store Owner | Have a social media presence | Create awareness of Fore Golf products | From the footer section, the links to social media sites such as Facebook and Instagram are included. A Facebook page for Fore Golf is also created as an example of having a social media presence. | PASS
+
+
+## Validation
+### HTML Validation
+
+I used [W3C Markup Validation Service](https://validator.w3.org/) to validate all the HTML files by direct input, you can find my results below:
+
+<details>
+<summary>Home Page</summary>
+<br>
+
+![Home](/readme_images/home-page.png)
+</details>
+
+<details>
+<summary>All Products Page</summary>
+<br>
+
+![All Products](/readme_images/all-products-page.png)
+</details>
+
+<details>
+<summary>Product Detail Page</summary>
+<br>
+
+![Product Detail](/readme_images/product-detail-page.png)
+</details>
+
+<details>
+<summary>Shopping Bag Page</summary>
+<br>
+
+![Shopping Bag](/readme_images/shopping-bag-page.png)
+</details>
+
+<details>
+<summary>Checkout Page</summary>
+<br>
+There is one warning here due to an empty h1 element, however it does have an icon within the element so I ignored this warning.
+
+![Checkout](/readme_images/checkout-page.png)
+</details>
+
+<details>
+<summary>Checkout Success Page</summary>
+<br>
+
+![Checkout Success](/readme_images/checkout-success-page.png)
+</details>
+
+<details>
+<summary>Register Page</summary>
+<br>
+
+![Register](/readme_images/register-page.png)
+</details>
+
+<details>
+<summary>Login Page</summary>
+<br>
+
+![Login](/readme_images/login-page.png)
+</details>
+
+<details>
+<summary>Profile Page</summary>
+<br>
+
+![Profile](/readme_images/profile-page.png)
+</details>
+
+<details>
+<summary>Add Product Page</summary>
+<br>
+
+![Add Product](/readme_images/add-product-page.png)
+</details>
+
+<details>
+<summary>Edit Product Page</summary>
+<br>
+
+![Edit Product](/readme_images/edit-product-page.png)
+</details>
