@@ -181,15 +181,15 @@
         </div>
     </div>
 
-    <!-- back to top button -- taken from https://codepen.io/matthewcain/pen/ZepbeR -->
+    <!-- back to top button - taken from https://codepen.io/matthewcain/pen/ZepbeR -->
     <a id="button"></a>
 
 {% endblock %}
 
 {% block postloadjs %}
     {{ block.super }}
-    <!-- back to top button -- taken from https://codepen.io/matthewcain/pen/ZepbeR -->
-    <script type="text/javascript">
+    <!-- back to top button - taken from https://codepen.io/matthewcain/pen/ZepbeR -->
+    <script>
         var btn = $('#button');
 
         $(window).scroll(function() {
@@ -206,7 +206,7 @@
         });
     </script>
 
-    <script type="text/javascript">
+    <script>
 
         $('#sort-selector').change(function() {
             var selector = $(this);
