@@ -241,7 +241,7 @@
 							<div class="optionalParent">
 								<div class="clear foot">
 									<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-									<p class="brandingLogo"><a href="http://eepurl.com/ik2_R9" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg"></a></p>
+									<p class="brandingLogo"><a href="http://eepurl.com/ik2_R9" title="Mailchimp - email marketing made easy and fun"><img src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_light_dtp.svg" alt="mailchimp logo"></a></p>
 								</div>
 							</div>
 						</div>
@@ -250,8 +250,8 @@
 				</div>
 			</div>
 			<!-- mailchimp scripts -->
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-			<script type='text/javascript'>(function($) {
+			<script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+			<script>(function($) {
 				window.fnames = new Array(); 
 				window.ftypes = new Array();
 				fnames[0]='EMAIL';ftypes[0]='email';
@@ -279,7 +279,7 @@
 	</footer>
 
 	{% block postloadjs %}
-		<script type="text/javascript">
+		<script>
 			$('.toast').toast('show');
 		</script>
 	{% endblock %}
