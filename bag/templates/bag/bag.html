@@ -98,7 +98,6 @@
                                 </td>
                             </tr>
                         {% endfor %}
-                        <hr>
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
                                 {% include 'bag/bag-total.html' %}
@@ -136,7 +135,7 @@
     {% include 'products/includes/quantity_input_script.html' %}
 
     <!-- back to top button - taken from https://codepen.io/matthewcain/pen/ZepbeR -->
-    <script type="text/javascript">
+    <script>
         var btn = $('#button');
 
         $(window).scroll(function() {
@@ -153,7 +152,7 @@
         });
     </script>
 
-    <script type="text/javascript">
+    <script>
         // Update quantity on click
         $('.update-item').click(function(e) {
             var form = $(this).prev('.update-form');
@@ -163,9 +162,9 @@
         // Remove item and reload on click
         $('.remove-item').click(function(e) {
             var csrfToken = "{{ csrf_token }}";
-            var itemId = $(this).attr('id').split('remove_')[1];
+            var itemClass = $(this).attr('class').split('remove_')[1];
             var degrees = $(this).data('club_degrees');
-            var url = `/bag/remove/${itemId}/`;
+            var url = `/bag/remove/${itemClass}/`;
             var data = {'csrfmiddlewaretoken': csrfToken, 'club_degrees': degrees};
 
             $.post(url, data)
