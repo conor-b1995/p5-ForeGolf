@@ -126,3 +126,31 @@ There is one warning here due to an empty h1 element, however it does have an ic
 
 ![Edit Product](/readme_images/edit-product-page.png)
 </details>
+
+***
+### CSS Validation
+
+I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to validate all the CSS files by direct input, you can find my results below:
+
+<details>
+<summary>Base CSS</summary>
+<br>
+
+![base.css](/readme_images/base-css-val.png)
+</details>
+
+<details>
+<summary>Checkout CSS</summary>
+<br>
+
+![checkout.css](/readme_images/checkout-css-val.png)
+</details>
+
+<details>
+<summary>Profile CSS</summary>
+<br>
+
+![profile.css](/readme_images/profile-css-val.png)
+</details>
+
+
