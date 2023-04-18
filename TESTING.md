@@ -153,4 +153,43 @@ I used [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) to val
 ![profile.css](/readme_images/profile-css-val.png)
 </details>
 
+***
+### JavaScript Validation
+
+I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files, you can find my results below:
+
+<details>
+<summary>Country Field JS</summary>
+<br>
+
+![countryfield.js](/readme_images/countryfield-js-val.png)
+</details>
+
+<details>
+<summary>Quantity Input JS</summary>
+<br>
+
+![quantity input script](/readme_images/quantity-input-script-js-val.png)
+</details>
+
+<details>
+<summary>Remove/Update buttons JS</summary>
+<br>
+
+![Remove/Update buttons JS](/readme_images/remove-update-buttons-js-val.png)
+</details>
+
+<details>
+<summary>Scroll to top button JS</summary>
+<br>
+
+![Scroll to top button JS](/readme_images/scroll-to-top-button-js-val.png)
+</details>
+
+<details>
+<summary>Sort selector box JS</summary>
+<br>
+
+![Sort selector box JS](/readme_images/sort-selector-box-js-val.png)
+</details>
 
