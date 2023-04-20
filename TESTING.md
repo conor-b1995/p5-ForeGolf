@@ -193,3 +193,52 @@ I used [JSHint](https://jshint.com/) to validate all JavaScript and JQuery files
 ![Sort selector box JS](/readme_images/sort-selector-box-js-val.png)
 </details>
 
+***
+### Python Validation
+I used [Code Institute's Python Linter](https://pep8ci.herokuapp.com/) to lint my Python code.
+| File | Result | Validation Details & Screenshots |
+| :-- | :-: | -------------------------- |
+| custom_storages.py | All clear, no errors found | [custom_storages.py](/readme_images/custom_storages.py-val.png)|
+| **FORE GOLF** |  |  |
+| fore_golf/settings.py | All clear, no errors found | [settings.py validation](/readme_images/fore_golf-settings.py-val.png) |
+| fore_golf/urls.py | All clear, no errors found | [urls.py validation](/readme_images/fore_golf-urls.py-val.png) |
+| fore_golf/views.py | All clear, no errors found | [views.py validation](/readme_images/fore_golf-views.py-val.png) |
+| **BAG APP** |  |  |
+| bag/templatestags/bag_tools.py | All clear, no errors found | [bag_tools.py validation](/readme_images/bag-bag_tools.py-val.png) |
+| bag/contexts.py | All clear, no errors found | [contexts.py validation](/readme_images/bag-contexts.py-val.png) |
+| bag/urls.py | All clear, no errors found | [urls.py validation](/readme_images/bag-urls.py-val.png) |
+| bag/views.py | Only a few "line too long" errors | [views.py validation](/readme_images/bag-views.py-val.png) |
+| **CHECKOUT APP** |  |  |
+| checkout/admin.py | All clear, no errors found | [admin.py validation](/readme_images/checkout-admin.py-val.png) |
+| checkout/apps.py | All clear, no errors found | [apps.py validation](/readme_images/checkout-apps.py-val.png) |
+| checkout/forms.py | All clear, no errors found | [forms.py validation](/readme_images/checkout-forms.py-val.png) |
+| checkout/models.py | Only a few "line too long" errors | [models.py validation](/readme_images/checkout-models.py-val.png) |
+| checkout/signals.py | All clear, no errors found | [signals.py validation](/readme_images/checkout-signals.py-val.png) |
+| checkout/urls.py | Only a few "line too long" errors | [urls.py validation](/readme_images/checkout-urls.py-val.png) |
+| checkout/views.py | Only a few "line too long" errors | [views.py validation](/readme_images/checkout-views.py-val.png) |
+| checkout/webhook_handler.py | Only a few "line too long" errors | [webhook_handler.py validation](/readme_images/checkout-webhook_handler.py-val.png) |
+| checkout/webhooks.py | Only one "line too long" error | [webhooks.py validation](/readme_images/checkout-webhooks.py-val.png) |
+| **CONTACT APP** |  |  |
+| contact/admin.py | All clear, no errors found | [admin.py validation](/readme_images/contact-admin.py-val.png) |
+| contact/apps.py | All clear, no errors found | [apps.py validation](/readme_images/contact-apps.py-val.png) |
+| contact/forms.py | All clear, no errors found | [forms.py validation](/readme_images/contact-forms.py-val.png) |
+| contact/models.py | All clear, no errors found | [models.py validation](/readme_images/contact-models.py-val.png) |
+| contact/urls.py | All clear, no errors found | [urls.py validation](/readme_images/contact-urls.py-val.png) |
+| contact/views.py | All clear, no errors found | [views.py validation](/readme_images/contact-views.py-val.png) |
+| **HOME APP** |  |  |
+| home/apps.py | All clear, no errors found | [apps.py validation](/readme_images/home-apps.py-val.png) |
+| home/urls.py | All clear, no errors found | [urls.py validation](/readme_images/home-urls.py-val.png) |
+| home/views.py | All clear, no errors found | [views.py validation](/readme_images/home-views.py-val.png) |
+| **PRODUCTS APP** |  |  |
+| products/admin.py | All clear, no errors found | [admin.py validation](/readme_images/products-admin.py-val.png) |
+| products/apps.py | All clear, no errors found | [apps.py validation](/readme_images/products-apps.py-val.png) |
+| products/forms.py | Only a few "line too long" errors | [forms.py validation](/readme_images/products-forms.py-val.png) |
+| products/models.py | Only a few "line too long" errors | [models.py validation](/readme_images/products-models.py-val.png) |
+| products/urls.py | Only one "line too long" error | [urls.py validation](/readme_images/products-urls.py-val.png) |
+| products/views.py | Only a few "line too long" errors | [views.py validation](/readme_images/products-views.py-val.png) |
+| **PROFILES APP** |  |  |
+| profiles/apps.py | All clear, no errors found | [apps.py validation](/readme_images/profiles-apps.py-val.png) |
+| profiles/forms.py | Only one "line too long" error | [forms.py validation](/readme_images/profiles-forms.py-val.png) |
+| profiles/models.py | Only a few "line too long" errors | [models.py validation](/readme_images/profiles-models.py-val.png) |
+| profiles/urls.py | Only one "line too long" error | [urls.py validation](/readme_images/profiles-urls.py-val.png) |
+| profiles/views.py | Only a few "line too long" errors | [views.py validation](/readme_images/profiles-views.py-val.png) |
