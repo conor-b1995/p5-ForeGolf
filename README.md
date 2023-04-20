@@ -73,6 +73,18 @@ Create a website for golf lovers around the world to purchase products. Also tha
 * A website that is compatible with most screen devices and browsers.
 
 ---
+## Database
+**Entity Relationship Diagram:**<br/>
+This ER diagram captures the relationships between real-world entities. The entities are the data points of objects such as persons, places and things and together with their attributes, compose their domain ie. their individual table. The relationships between these entities are then mapped and identified. As evidenced by the database design and the ERD discussed, the data model type used for this project is the Relational Model.
+
+<details> 
+<summary>Database diagram</summary>
+<br>
+
+![Screenshot of diagram](/readme_images/database-diagram.png)
+</details>
+
+---
 ## Website Design
  
 ### Design
